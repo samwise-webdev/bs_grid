@@ -20,9 +20,23 @@
 <body>
     <div class="container">
         <h1>The Grid System</h1>
-<!-- Every row in BS has 12 units of space to divide up. Every division within a row will be a column -->
+<!-- Every row in BS has 12 units of space to divide up. Every division within a row will be a column. Each column class will start with 'col' -->
             <div class="row"> 
-                
+                <div class="col-6 bg-success">I am 6 units</div>
+                <div class="col-6 bg-info">I am 6 units</div>
+            </div>
+            <div class="row"> 
+                <div class="col-4 bg-success">I am 4 units</div>
+                <div class="col-8 bg-info">I am 8 units</div>
+            </div>
+            <div class="row">
+                <div class="col bg-secondary">I am 2 units</div>
+                <div class="col-8 bg-primary">I am 8 units. Less than 12 will leave extra space.</div>
+                <div class="col bg-secondary">I am 2 units</div>
+            </div>
+            <div class="row">
+                    <div class="col-3 bg-warning">I am 3 units</div>
+                    <div class="col-6 bg-danger">I am 6 units. Less than 12 will leave extra space.</div>
             </div>
     </div>
 
