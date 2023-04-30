@@ -14,33 +14,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bootstrap Grid</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
+    <h1>The Grid System</h1>
+    <br>
     <div class="container">
-        <h1>The Grid System</h1>
-<!-- Every row in BS has 12 units of space to divide up. Every division within a row will be a column. Each column class will start with 'col' -->
+        <h2>Sized Using Units .col-#</h2>
+            <p>Every row in Bootstrap has 12 units of space to divide up. Every division within a row will be a column. Each column class will start with 'col' and can have additional parts (col-1, col-sm-1 etc) depending on what you want to do with the columns</p>
             <div class="row"> 
-                <div class="col-6 bg-success">I am 6 units</div>
-                <div class="col-6 bg-info">I am 6 units</div>
+                <div class="col-6 bg-success bg-opacity-50">I am 6 units</div>
+                <div class="col-6 bg-info bg-opacity-50">I am 6 units</div>
             </div>
             <div class="row"> 
-                <div class="col-4 bg-success">I am 4 units</div>
-                <div class="col-8 bg-info">I am 8 units</div>
+                <div class="col-4 bg-success bg-opacity-50">I am 4 units</div>
+                <div class="col-8 bg-info bg-opacity-50">I am 8 units</div>
             </div>
             <div class="row">
-                <div class="col bg-secondary">I am 2 units</div>
-                <div class="col-8 bg-primary">I am 8 units. Less than 12 will leave extra space.</div>
-                <div class="col bg-secondary">I am 2 units</div>
+                <div class="col bg-secondary bg-opacity-50">I am 2 units</div>
+                <div class="col-8 bg-primary bg-opacity-50">I am 8 units. Less than 12 will leave extra space.</div>
+                <div class="col bg-secondary bg-opacity-50">I am 2 units</div>
             </div>
             <div class="row">
-                    <div class="col-3 bg-warning">I am 3 units</div>
-                    <div class="col-6 bg-danger">I am 6 units. Less than 12 will leave extra space.</div>
+                    <div class="col-3 bg-warning bg-opacity-50">I am 3 units</div>
+                    <div class="col-6 bg-danger bg-opacity-50">I am 6 units. Less than 12 will leave extra space.</div>
             </div>
     </div>
+    <br>
+    <div class="container">
+        <h2>Auto Sized Using Only .col</h2>
+        <div class="row">
+            <div class="col bg-warning bg-opacity-50">I am auto sized</div>
+            <div class="col bg-success bg-opacity-50">I am auto sized</div>
+            <div class="col bg-warning bg-opacity-50">I am auto sized</div>
+        </div>
+        <div class="row">
+            <div class="col bg-success bg-opacity-50">I am auto sized</div>
+            <div class="col bg-warning bg-opacity-50">I am auto sized</div>
+            <div class="col bg-success bg-opacity-50">I am auto sized</div>
+            <div class="col bg-warning bg-opacity-50">I am auto sized</div>
+            <div class="col bg-success bg-opacity-50">I am auto sized</div>
+        </div>
+        <br>
+        <h2>Auto Sized Using .col and col-#</h2>
+        <div class="row">
+            <div class="col bg-success bg-opacity-50">I am auto sized</div>
+            <div class="col bg-warning bg-opacity-50">I am auto sized</div>
+            <div class="col-8 bg-success bg-opacity-50">I am 8 Units</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Responsive Grid</h2>
+        <p>The responsive grid classes (col-sm-#, col-md-#, col-lg-# etc) allow for the column to take up that many units above the specified breakpoint. The col-sm will apply to anything above 576px, the col-md will apply to anything above 768px and so on.</p>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 bg-danger bg-opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae nobis recusandae iste nam unde, suscipit tempore culpa exercitationem est assumenda aliquam quam accusamus esse doloremque aspernatur quod quaerat nemo?</div>
+            <div class="col-md-6 col-lg-3 bg-warning bg-opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae nobis recusandae iste nam unde, suscipit tempore culpa exercitationem est assumenda aliquam quam accusamus esse doloremque aspernatur quod quaerat nemo?</div>
+            <div class="col-md-6 col-lg-3 bg-success bg-opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae nobis recusandae iste nam unde, suscipit tempore culpa exercitationem est assumenda aliquam quam accusamus esse doloremque aspernatur quod quaerat nemo?</div>
+            <div class="col-md-6 col-lg-3 bg-info bg-opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae nobis recusandae iste nam unde, suscipit tempore culpa exercitationem est assumenda aliquam quam accusamus esse doloremque aspernatur quod quaerat nemo?</div>
+        </div>
+    </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
